@@ -11,10 +11,30 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.log",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.log",
+					"match": "\\b(BUG|LOG|HEADER)\\b"
+				},
+				{
+					"name": "keyword.datatype.log",
+					"match": "\\b(Assignment|CheckPoint|CreateTime)\\b"
+				},
+				{
+					"name": "support.function.label",
+					"match": "\\b(Time|Creator|Description|Solution)\\b"
+				},
+				{
+					"name": "comment.line.log",
+					"begin": "<!>",
+					"end": "\n"
+				},
+				{
+					"name": "comment.block.log",
+					"begin": "<",
+					"end": ">"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.log",

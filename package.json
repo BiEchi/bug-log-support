@@ -1,14 +1,27 @@
 {
     "name": "bug-log-support",
-    "displayName": "bug-log-support",
+    "displayName": "Bug Log Support for UIUC ECE391",
     "description": "This extension is used to generate an initial bug log and give snippets and highlights for the bug log.",
-    "version": "0.0.1",
+    "version": "1.1.0",
+    "license": "GPL",
     "engines": {
-        "vscode": "^1.64.0"
+        "vscode": "^1.38.0"
     },
+    "icon": "graphs/icon.png",
+	"publisher": "JackBAI",
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets",
+        "Themes"
     ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/BiEchi/bug-log-support"
+	},
+    "bugs": {
+		"url": "https://github.com/BiEchi/bug-log-support/issues",
+		"email": "haob2@illinois.edu"
+	},
     "contributes": {
         "languages": [{
             "id": "log",
@@ -20,6 +33,12 @@
             "language": "log",
             "scopeName": "source.log",
             "path": "./syntaxes/log.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+			{
+				"language": "log",
+				"path": "./snippets/log.json"
+			}
+		]
     }
 }

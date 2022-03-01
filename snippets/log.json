@@ -1,0 +1,56 @@
+{
+    "Name of the assignment.": {
+        "prefix":[
+            "Assignment"
+        ],
+        "body": "Assignment:\n\t${1:MP?}\n"
+    },
+    "Check point of the assignment.": {
+        "prefix": [
+            "CheckPoint"
+        ],
+        "body": "CheckPoint:\n\t${1:CP?}\n"
+    },
+    "Create time of the assignment.": {
+        "prefix": [
+            "CreateTime"
+        ],
+        "body": "CreateTime:\n\t2022.${1:??}.${2:??}\n"
+    },
+    "Create time of the bug.": {
+        "prefix": [
+            "Time"
+        ],
+        "body": "Time:\n\t2022.${1:??}.${2:??}\n"
+    },
+    "Creatpr of the bug (and bug report for this bug).": {
+        "prefix": [
+            "Creator"
+        ],
+        "body": "Creator:\n\t${1:First Last}\n"
+    },
+    "Description of the bug.": {
+        "prefix": [
+            "Description"
+        ],
+        "body": "Description:\n\t${1:...}\n"
+    },
+    "Solution of the bug.": {
+        "prefix": [
+            "Solution"
+        ],
+        "body": "Solution:\n\t${1:...}\n"
+    },
+    "Generate the header.": {
+        "prefix": [
+            "header"
+        ],
+        "body": "<=========================================================>\n<=================>    BUG LOG HEADER   <=================>\n<=========================================================>\nAssignment:\n\t${1:MP?}\nCheckPoint:\n\t${2:CP?}\nCreateTime:\n\t2022.${3:??}.${4:??}\n"
+    },
+    "Generator a bug report entry.": {
+        "prefix": [
+            "bug"
+        ],
+        "body": "<--------------------------------------------------------->\n                          BUG ${1:?}                          \n<--------------------------------------------------------->\nTime:\n\t2022.${2:??}.${3:??}.\nCreator:\n\t${4:First Last}.\nDescription:\n\t${5:...}.\nSolution:\n\t${6:...}.\n"
+    }
+}
